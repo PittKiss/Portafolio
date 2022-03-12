@@ -1,0 +1,41 @@
+﻿#foto {
+    width: 600px;
+    margin: 2rem 0;
+}
+
+#imagen-baner {
+    height: 300px;
+}
+
+.seccion-bienvenida {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin: 0 0 10rem 0;
+    color: white;
+}
+
+    .seccion-bienvenida h1 {
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .seccion-bienvenida p {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
+
+.cabecera {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.habilidades {
+    color: 0d6efd;
+    font-size: 20px;
+}
+
+    .habilidades ul {
+        list-style: none;
+        padding-left: 0px;
+    }
