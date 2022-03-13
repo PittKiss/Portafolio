@@ -12,18 +12,46 @@
     padding-bottom: 150px;
     margin: 0 0 10rem 0;
     color: white;
+    /*background: linear-gradient(30deg, #9ED8DB 40%, #007B82 70%);*/
+    /*background-image: url("/img/carta.gif");*/
+    /*background-size: cover;*/
+    /*background-repeat: repeat;*/
+    /*background-color: #cccccc;*/
 }
 
     .seccion-bienvenida h1 {
-        margin-bottom: 1rem;
-        color: white;
+        /*margin-bottom: 1rem;
+        color: white;*/
+        /*Vemos una imagen*/
+        /*background: url('/img/offline.jpg') no-repeat center center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;*/
+        /*Color se anima gradiente*/
+        font-weight: bold;
+        background: radial-gradient(circle, #80ffc1 0%, #ff6161 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: animatedGradient 2s infinite ease;
+        animation-direction: alternate;
     }
 
-    .seccion-bienvenida p {
-        font-family: sans-serif;
-        line-height: 1.5;
-        font-size: 1.25rem;
+@keyframes animatedGradient {
+    from {
+        background-size: 100%;
     }
+
+    to {
+        background-size: 250%;
+    }
+}
+
+.seccion-bienvenida p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
 
 .cabecera {
     font-weight: bold;
