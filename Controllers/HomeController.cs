@@ -8,9 +8,9 @@ namespace Portafolio.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
-        private readonly RepositorioProyectos repositorio;
+        private readonly IServiciosRepositorio repositorio;
 
-        public HomeController(ILogger<HomeController> logger,RepositorioProyectos repositorio)
+        public HomeController(ILogger<HomeController> logger, IServiciosRepositorio repositorio)
 		{
 			_logger = logger;
             this.repositorio = repositorio;
