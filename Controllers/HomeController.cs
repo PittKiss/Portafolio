@@ -15,7 +15,7 @@ namespace Portafolio.Controllers
 
 		public IActionResult Index()
 		{
-			var proyectos = ObtenerProyectos().Take(3).ToList();
+			var proyectos = ObtenerProyectos().Take(6).ToList();
 			var modelo = new HomeInicioViewModel { Proyectos = proyectos };
 			ViewBag.Tipo = "Minion ";
 			return View("Inicio", modelo);
@@ -23,10 +23,12 @@ namespace Portafolio.Controllers
 		private List<Proyecto> ObtenerProyectos() {
 
 			return new List<Proyecto> {
-				new Proyecto { Titulo = "Kungfu Pandih", Descripcion = "Hago Kungfu", Link="https://www.twitch.tv", ImagenURL="/img/Panel1.jpg"},
-				new Proyecto { Titulo = "Putazo", Descripcion = "Te doy un putazo", Link="https://www.twitch.tv", ImagenURL="/img/Panel2.jpg"},
-				new Proyecto { Titulo = "Zing", Descripcion = "Te hago un zing", Link="https://www.twitch.tv", ImagenURL="/img/Panel3.jpg"},
-				new Proyecto { Titulo = "Bestia", Descripcion = "Te grito en la oreja", Link="https://www.twitch.tv", ImagenURL="/img/Panel4.jpg"}
+				new Proyecto { Titulo = "Kungfu Pandih", Descripcion = "Hago Kungfu", Link="https://www.twitch.tv", ImagenURL="/img/kungfu.jpg"},
+				new Proyecto { Titulo = "Putazo", Descripcion = "Te muerdo y te pego", Link="https://www.twitch.tv", ImagenURL="/img/putazo.jpg"},
+				new Proyecto { Titulo = "Zing", Descripcion = "Te hago un zing horendo", Link="https://www.twitch.tv", ImagenURL="/img/zing.jpg"},
+				new Proyecto { Titulo = "Pandih en bikini", Descripcion = "Te digo 'Pandih en bikini tomando un martini'", Link="https://www.twitch.tv", ImagenURL="/img/bikini.jpg"},
+				new Proyecto { Titulo = "Pandih minipekka", Descripcion = "Te digo 'aña'", Link="https://www.twitch.tv", ImagenURL="/img/aña.jpg"},
+				new Proyecto { Titulo = "Pandih se va", Descripcion = "Me pongo la capucha y me voy por lo alto", Link="https://www.twitch.tv", ImagenURL="/img/capucha.gif"}
 			};
 		}
 
