@@ -1,13 +1,16 @@
 ﻿<div class="text-center">
-	<h1 class="display-3">Hola bienvenido me llamo Minion Stuart y tengo 13 años</h1>
-	<h4>Esto es una bienvenida formal a mi página web</h4>
-	<img id="foto" src="~/img/foto.jpg" alt="foto de los Minions" />
-	<h4>Eres menor de edad, lo siento vete con Pandih...  <button class="btn btn-danger">Ir con pandih :(</button></h4>
+	<h1 class="display-3">Me llamo Pandih y tengo 13 años</h1>
+	<h4>Esta es mi página web</h4>
+	<img id="foto" src="~/img/perfil.png" alt="foto de los Minions" />
+	<h4>
+		Eres menor de edad, lo siento vete con Pandih...
+		<a class="btn btn-dark" href="https://www.twitch.tv/soypandih" target="_blank" rel="noopener noreferrer">Ir con pandih :(</a>
+	</h4>
+
 </div>
 
 <div class="text-center">
-	<img src="~/img/bgd.jpg" alt="Imagen del baner" id="imagen-baner" />
-
+	<img src="~/img/pandihtwitch.png" alt="Imagen del baner" id="imagen-baner" />
 </div>
 
 <div class="row justify-content-center text-center bg-dark seccion-bienvenida">
@@ -21,8 +24,22 @@
 			Me gustan los caballos y la salsa boloñesa.<br />
 			Me gusta pegar a la gente muy de vez en cuando (del 1 al 10 un 1000).<br />
 			<hr />
-			Tengo un cuarto rojo. <button class="btn btn-danger">Ir al cuarto rojo</button>
+			Tengo un cuarto rojo:   <button class="btn btn-danger">Ir al cuarto rojo</button>
+
 		</p>
 	</div>
 </div>
+
+
+@section Scripts{
+<!-- Page specific script -->
+<script type="text/javascript">
+
+	function showHide(){
+		var oImageDiv=document.getElementById('myimageDiv')
+		oImageDiv.style.display=(oImageDiv.style.display=='none')?'inline':'none'
+	}
+
+</script>
+}
 

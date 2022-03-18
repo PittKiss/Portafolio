@@ -4,7 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IServiciosRepositorio, IRepositorioProyectos>();
+builder.Services.AddTransient<IServiciosRepositorio, RepositorioProyectos>();
+builder.Services.AddTransient<IServiciosEmail, Email>();
 
 
 var app = builder.Build();

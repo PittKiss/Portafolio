@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Proyecto>
+<div class="container">
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			@foreach (var proyecto in Model)
+			{
+				<div>
+					<div class="card h-100">
+						<img src="@proyecto.ImagenURL" class="card-img-top" alt="Imagen del momento" />
+						<div class="card-body">
+							<h5 class="card-title text-center "><strong>@proyecto.Titulo</strong></h5>
+							<p class="card-text">@proyecto.Descripcion</p>
+						</div>
+						<div class="card-footer">
+							<div class="d-grid gap-1">
+								<a class="btn btn-outline-dark" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Ver momento</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>

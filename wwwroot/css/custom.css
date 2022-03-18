@@ -4,7 +4,8 @@
 }
 
 #imagen-baner {
-    height: 300px;
+    height: 100px;
+    /*background-size: cover;*/
 }
 
 .seccion-bienvenida {

@@ -6,7 +6,7 @@ namespace Portafolio.Servicios
     {
         List<Proyecto> ObtenerProyectos();
     }
-    public class IRepositorioProyectos : IServiciosRepositorio
+    public class RepositorioProyectos : IServiciosRepositorio
     {
         public List<Proyecto> ObtenerProyectos()
         {
